@@ -1,0 +1,136 @@
+
+<view class="page">
+     <view class="weui-tab">
+        <view class="weui-navbar weui-navbar_bg">
+            <block wx:for-items="{{tabs}}" wx:key="{{index}}">
+                <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                    <view class="weui-navbar__title">{{item}}</view>
+                </view>
+            </block>
+            <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+        </view>
+        <view class="weui-tab__panel">
+            <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                <view class="weui-panel">
+                    <view class="weui-panel__bd">
+                        <view class="weui-media-box weui-media-box_text">
+                            <view class="weui-media-box__title weui-media-box__title_in-text">最新招聘2017-1-9 </view>
+                            <view class="weui-media-box__desc">合肥市蜀山小学下学期急需聘用语文老师2名，各位如有合适人选，烦请帮忙推荐，非常感谢！有意者请将个人简历发至邮箱：604566403@qq.com，联系电话：18055125037（汪老师）</view>
+                            <view class="weui-media-box__info">
+                                <view class="weui-media-box__info__meta">合肥教师代课</view>
+                                <view class="weui-media-box__info__meta">2017-01-09</view>
+                                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">阅读 918</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="weui-panel">
+                    <view class="weui-panel__bd">
+                        <view class="weui-media-box weui-media-box_text">
+                            <view class="weui-media-box__title weui-media-box__title_in-text">最新招聘2017-1-8 </view>
+                            <view class="weui-media-box__desc">合肥市第67中学小学部招聘美术教师启事,我校因教育教学工作的实际需要，现拟招聘小学美术教师1名。有意者请于2017年1月26日前将个人简历发送至邮箱504695245@qq.com。</view>
+                            <view class="weui-media-box__info">
+                                <view class="weui-media-box__info__meta">合肥教师代课</view>
+                                <view class="weui-media-box__info__meta">2017-01-08</view>
+                                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">阅读 1125</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="weui-panel">
+                    <view class="weui-panel__bd">
+                        <view class="weui-media-box weui-media-box_text">
+                            <view class="weui-media-box__title weui-media-box__title_in-text">最新招聘2017-1-7 </view>
+                            <view class="weui-media-box__desc">合肥市五十中学南校因教学工作需要，下学期急聘初中物理、初中语文教师各一名。简历投递时间：2016年12月30日至2017年1月16日。（面试等通知）联系人:蔡老师，电话：13515666755</view>
+                            <view class="weui-media-box__info">
+                                <view class="weui-media-box__info__meta">合肥教师代课</view>
+                                <view class="weui-media-box__info__meta">2017-01-07</view>
+                                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">阅读 978</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="weui-panel">
+                    <view class="weui-panel__bd">
+                        <view class="weui-media-box weui-media-box_text">
+                            <view class="weui-media-box__title weui-media-box__title_in-text">最新招聘2017-1-6 </view>
+                            <view class="weui-media-box__desc">合肥市凤凰城小学急聘语文教师，为进一步提高学校的教育教学质量，根据实际需要，现急聘小学语文教师1名。从即日起至2016年1月15日止。</view>
+                            <view class="weui-media-box__info">
+                                <view class="weui-media-box__info__meta">合肥教师代课</view>
+                                <view class="weui-media-box__info__meta">2017-01-06</view>
+                                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">阅读 940</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="weui-panel">
+                    <view class="weui-panel__bd">
+                        <view class="weui-media-box weui-media-box_text">
+                            <view class="weui-media-box__title weui-media-box__title_in-text">合肥市包河区外国语实验小学教师招聘</view>
+                            <view class="weui-media-box__desc">合肥市包河区外国语实验小学（合肥市巢湖南路元一柏庄内）因教学工作需要，现急需聘用语文老师一名，需有语文教师资格证，有工作经验者优先，各位如有合适人选，请帮忙推荐。谢谢！请将相关信息发短信至13505612108，我校将电话通知面试</view>
+                            <view class="weui-media-box__info">
+                                <view class="weui-media-box__info__meta">合肥教师代课</view>
+                                <view class="weui-media-box__info__meta">2017-01-05</view>
+                                <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">阅读 1063</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+                 <view class="weui-article">
+                    <view class="weui-article__h1">各位需要发布招聘信息的学校老师：</view>
+                    <view class="weui-article__section">
+                        <view class="weui-article__section">
+                             <view class="weui-article__p">
+                                大家好！
+                            </view>
+                            <view class="weui-article__p">
+                                近来我们在论坛的后台收到一些老师的留言，问如何发布招聘信息，由于论坛不能实时在线看到老师的留言，往往这些信息就过时了。
+                            </view>
+                            <view class="weui-article__p">
+                                所以需要发布招聘信息的老师可以通过以下两种方式发布，我们会及时更新到论坛和微信公众号中。
+                            </view>
+                        </view>
+                        <view class="weui-article__section">
+                            <view class="weui-article__h1">发布招聘信息渠道：</view>
+                            <view class="weui-article__p">
+                                1.加入合肥教师代课2000人QQ大群（群号：297440897），在群内发布即可，我们会及时更新到网站和微信公众号中。
+                            </view>
+                            <view class="weui-article__p">
+                                2.直接在合肥教师代课（hfjsdk）微信公众号给我们留言，我们也会及时更新到网站和微信公众号以及QQ群中。
+                            </view>
+                            <view class="weui-article__p">
+                                通过以上两种方式的任何一种都可以，也可以两种同时使用能够更快招到需要的老师哦。
+                            </view>
+                            <view class="weui-article__p">
+                                目前微信公众号已有超过4000名合肥本地真实需要找代课的教师，招聘信息一经发布，2小时内浏览量就会破千，学校再也不用担心找不到代课老师了。
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+                <view class="weui-cells weui-cells_after-title">
+                    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                        <view class="weui-cell__bd">QQ群交流</view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access">2000人大群一起交流</view>
+                    </navigator>
+                    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                        <view class="weui-cell__bd">论坛交流</view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access">网络BBS传统论坛</view>
+                    </navigator>
+                    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                        <view class="weui-cell__bd">经验分享</view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access">看看前辈们是怎么做到的</view>
+                    </navigator>
+                    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                        <view class="weui-cell__bd">考编视频</view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access">教育综合全套视频</view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
